@@ -5,6 +5,18 @@ import Loading from "./loading";
 import Error from "./error";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import { inter, suwannaphum, localCustomFont } from "./font";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "ISTAD Ecommerce Web",
+	description: "ISTAD Ecommerce Web is a web application for selling products.",
+	openGraph: {
+		title: "ISTAD Ecommerce Web",
+		description: "ISTAD Ecommerce Web is a web application for selling products.",
+		images: ''
+	}
+}
+
 
 export default function RootLayout({
   children,
@@ -13,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${suwannaphum.variable} ${localCustomFont.variable}`}>
+      <body
+        className={`${inter.variable} ${suwannaphum.variable} ${localCustomFont.variable}`}
+      >
         <header>
           <NavbarComponent />
         </header>
