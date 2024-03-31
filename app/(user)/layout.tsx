@@ -8,15 +8,16 @@ import { inter, suwannaphum, localCustomFont } from "./font";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "ISTAD Ecommerce Web",
-	description: "ISTAD Ecommerce Web is a web application for selling products.",
-	openGraph: {
-		title: "ISTAD Ecommerce Web",
-		description: "ISTAD Ecommerce Web is a web application for selling products.",
-		images: ''
-	}
-}
-
+  title: "ISTAD E-commerce website",
+  description:
+    "ISTAD E-commerce website is a website that provides a lot of products and services.",
+  openGraph: {
+    title: "ISTAD E-commerce website",
+    description:
+      "ISTAD E-commerce website is a website that provides a lot of products and services.",
+	  images: "https://store.istad.co/media/brand_images/macbook.jpg"
+  },
+};
 
 export default function RootLayout({
   children,
